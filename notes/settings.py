@@ -9,6 +9,10 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
+import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 from pathlib import Path
 
@@ -26,10 +30,6 @@ SECRET_KEY = 'django-insecure-@py!6a@+tp-zdwfp8r*+89500i#a4+btik&8yr4uf&lubf2sfp
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
 
 # Application definition
 
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleWare',
 ]
 
 ROOT_URLCONF = 'notes.urls'
@@ -118,10 +119,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+STATICFILES_DIRS = [
+    BASE_DIR / "static",]
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())
