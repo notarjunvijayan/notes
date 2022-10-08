@@ -1,0 +1,3 @@
+# notes
+
+Django notes app
