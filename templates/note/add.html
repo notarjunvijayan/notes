@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Add Notes - NotesApp </title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% if submitted %}
+    <p>The note has been submitted</p>
+    {% else %}
+    <h1>Add Your Note</h1>
+    <hr>
+    <div class="col-6">
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-dark" value="Submit">
+        </form>
+    </div>  
+    {% endif %}
+</div>
+{% endblock %}

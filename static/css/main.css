@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Dancing+Script:wght@600&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap');
+li:hover{
+    background-color: red;
+}
+body{
+    background-color: #262523;
+    color: #ececec;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    font-family: 'Montserrat','sans-serif';
+}
+h2{
+    font-family: 'Montserrat','sans-serif';
+}
+p{
+    font-family: 'Oswald','sans-serif';
+    font-size: larger;
+}
+.navbar{
+    font-family: monospace;
+    background-color: #262523;
+    padding: 3%;
+}
+.navbar-brand{
+    font-family: 'Dancing Script',cursive;
+    font-size: x-large; 
+}
+.container{
+    padding: 3%;
+}
+.card{
+    background-color: #262525;
+    border: 1px solid #ececec;
+    border-radius: 0%;
+}
+.form-control{
+    background-color: #262525;
+    border-radius: 0%;
+    color: #ececec;
+}
+.Date-widget{
+    background-color: #262525;
+    color: #ececec;
+    border: 0.5px solid #ececec;
+}
+.btn{
+    background-color: #262523;
+    color: #ececec;
+    border-radius: 0;
+    border:0.5px solid #ececec;
+}
+.btn:hover{
+    background-color: #ececec;
+    color: #262523;
+    border:0.5px solid #262523;
+}
+footer{
+    background-color: #262523;
+    color: #ececec;
+}
+footer a{
+    background-color:#262523;
+    text-decoration: none;
+    color:#ececec;
+    font-family: monospace;
+
+}
+footer a:hover{
+    background-color:#262523;
+    text-decoration: none;
+    color:#ececec;
+}
+.grid-l{
+    border-right: 0.1px solid white;
+}

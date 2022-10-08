@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Home - NotesApp</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Home</h1>
+    <hr>
+    <p>A notes app, made with Django that can store notes in a Database and display them. 
+    <div class="container row">
+        <div class="container col-6 grid-l">
+            <h2>Add a Note</h2>
+            <br>
+            <a class="btn btn-primary" href={% url 'add' %} role="button">Take Me</a>
+        </div>
+        <div class="container col-6 grid-r">
+            <h2>Display Notes</h2>
+            <br>
+            <a class="btn btn-primary" href={% url 'display' %} role="button">Take Me</a>
+        </div>
+    </div> 
+</div>
+{% endblock %}

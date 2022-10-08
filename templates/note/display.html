@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Display - NotesApp </title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Notes</h1>
+    <hr>
+    <p>View the list of notes you saved here here</p> 
+    {% for note in note_lst %}
+    <div class="card col-6">
+        <div class="card-header">
+          <h5>{{ note.Title }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ note.Description }}</p>
+          <p class="card-text">On {{ note.Date }}</p>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+</div>
+
+{% endblock %}
