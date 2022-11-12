@@ -1,6 +1,11 @@
-# notes
+# NotesApp
 
 Notes app using Django 
 Deployed on Heroku
 
-https://notav-notes.herokuapp.com/
+Link to the Webpage:  https://notav-notes.herokuapp.com/ 
+<br>
+## Screenshot
+
+
+![NotesApp](https://github.com/notarjunvijayan/port3/blob/main/Images/notes.png)
