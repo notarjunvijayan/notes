@@ -3,7 +3,11 @@
 Notes app using Django 
 Deployed on Heroku
 Deployement not active now due to the new Heroku free tier policies
-Link to the Webpage:  https://notav-notes.herokuapp.com/ 
+### Link
+https://notav-notes.herokuapp.com/ 
+
+### Technologies Used
+HTMML,CSS, Django
 <br>
 ## Screenshot
 
